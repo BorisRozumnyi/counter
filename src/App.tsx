@@ -23,6 +23,6 @@ export const App = () => {
       </BrowserRouter>
     </Container>
   );
-}
+};
 
 export default App;

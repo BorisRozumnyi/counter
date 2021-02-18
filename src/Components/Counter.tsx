@@ -5,18 +5,18 @@ import { Button } from './Button';
 export const Counter: React.FC = () => {
   const [counter, setCounter] = useState(0);
   const handleIncremnt = () => {
-    console.log('incremnt')
-    setCounter(counter + 1)
-  }
+    console.log('incremnt');
+    setCounter(counter + 1);
+  };
   const handleDecremnt = () => {
-    console.log('decremnt')
-    setCounter(counter - 1)
-  }
+    console.log('decremnt');
+    setCounter(counter - 1);
+  };
   return (
     <Wrapper>
-      <Button handleClick={handleDecremnt} text='-' />
+      <Button handleClick={handleDecremnt} text="-" />
       <span>{counter}</span>
-      <Button handleClick={handleIncremnt} text='+' />
+      <Button handleClick={handleIncremnt} text="+" />
     </Wrapper>
   );
 };
