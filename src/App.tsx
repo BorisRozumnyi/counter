@@ -4,6 +4,7 @@ import { Container } from './Components/Container';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { frontendUrls } from './routes/frontendUrls';
+import { Counter } from './Components/Counter';
 
 export const App = () => {
   return (
@@ -15,7 +16,7 @@ export const App = () => {
             <h1>page1</h1>
           </Route>
           <Route path={frontendUrls.counter}>
-            <h1>page2</h1>
+            <Counter />
           </Route>
           <Redirect to={frontendUrls.about} />
         </Switch>
