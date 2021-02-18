@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import styled from 'styled-components'
-import { action } from "../redux/store";
-import { Button } from './Button'
+import React from 'react';
+import { useSelector } from 'react-redux';
+import styled from 'styled-components';
+import { action } from '../redux/store';
+import { Button } from './Button';
 
 export const Counter: React.FC = () => {
-  const counter = useSelector(state => state)
-  const handleIncremnt = () => action('INCREMENT')
+  const counter = useSelector((state) => state);
+  const handleIncremnt = () => action('INCREMENT');
   const handleDecremnt = () => action('DECREMENT');
   return (
     <Wrapper>
