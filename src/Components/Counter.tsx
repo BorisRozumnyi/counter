@@ -12,7 +12,7 @@ export const Counter: React.FC = () => {
     console.log('decremnt');
     setCounter(counter - 1);
   };
-  return (
+return (
 <Wrapper>
 <Button handleClick={handleDecremnt} text="-" />
 <span>{counter}</span>
