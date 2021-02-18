@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { frontendUrls } from '../routes/frontendUrls';
 
-export const Header = () => (
+export const Header: React.FC = () => (
   <NavWrapper>
     <StyledLink to={frontendUrls.about}>About</StyledLink>
     <StyledLink to={frontendUrls.counter}>Counter</StyledLink>
