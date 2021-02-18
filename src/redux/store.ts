@@ -23,4 +23,4 @@ export const store = createStore(
 
 sagaMiddleware.run(mainSaga);
 
-// const action = type => store.dispatch({type})
+export const action = (type: string) => store.dispatch({type})

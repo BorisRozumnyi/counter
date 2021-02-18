@@ -1,24 +1,20 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import styled from 'styled-components'
-  import { Button } from './Button'
+import { action } from "../redux/store";
+import { Button } from './Button'
 
 export const Counter: React.FC = () => {
-  const [counter, setCounter] = useState(0);
-  const handleIncremnt = () => {
-    console.log('incremnt');
-    setCounter(counter + 1);
-  };
-  const handleDecremnt = () => {
-    console.log('decremnt');
-    setCounter(counter - 1);
-  };
-return (
-<Wrapper>
-<Button handleClick={handleDecremnt} text="-" />
-<span>{counter}</span>
-<Button handleClick={handleIncremnt} text="+" />
-</Wrapper>
-);
+  const counter = useSelector(state => state)
+  const handleIncremnt = () => action('INCREMENT')
+  const handleDecremnt = () => action('DECREMENT');
+  return (
+    <Wrapper>
+      <Button handleClick={handleDecremnt} text="-" />
+      <span>{counter}</span>
+      <Button handleClick={handleIncremnt} text="+" />
+    </Wrapper>
+  );
 };
 
 const Wrapper = styled.div`
