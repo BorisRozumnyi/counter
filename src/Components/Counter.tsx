@@ -18,7 +18,7 @@ export const Counter: React.FC = () => {
 <span>{counter}</span>
 <Button handleClick={handleIncremnt} text="+" />
 </Wrapper>
-  );
+);
 };
 
 const Wrapper = styled.div`
