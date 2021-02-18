@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Button } from './Button';
+import { Button } from './Button'
 
 export const Counter: React.FC = () => {
   const [counter, setCounter] = useState(0);
@@ -13,11 +13,11 @@ export const Counter: React.FC = () => {
     setCounter(counter - 1);
   };
   return (
-    <Wrapper>
-      <Button handleClick={handleDecremnt} text="-" />
-      <span>{counter}</span>
-      <Button handleClick={handleIncremnt} text="+" />
-    </Wrapper>
+<Wrapper>
+<Button handleClick={handleDecremnt} text="-" />
+<span>{counter}</span>
+<Button handleClick={handleIncremnt} text="+" />
+</Wrapper>
   );
 };
 
