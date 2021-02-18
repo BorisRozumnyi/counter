@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Button } from './Button'
+import React, { useState } from "react";
+import styled from 'styled-components'
+  import { Button } from './Button'
 
 export const Counter: React.FC = () => {
   const [counter, setCounter] = useState(0);
